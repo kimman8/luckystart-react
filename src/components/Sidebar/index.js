@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   CloseIcon,
   Icon,
@@ -6,13 +6,13 @@ import {
   SidebarLink,
   SidebarMenu,
   SidebarRoute,
-  SidebuttonWrap,
+  SideBtnWrap,
 } from "./SidebarElements";
 
-const Sidebar = () => {
+const Sidebar = ({ isOpen, toggle }) => {
   return (
-    <SidebarContainer>
-      <Icon>
+    <SidebarContainer isOpen={isOpen}>
+      <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
       <SidebarMenu>
@@ -20,9 +20,9 @@ const Sidebar = () => {
         <SidebarLink to="/">Entrees</SidebarLink>
         <SidebarLink to="/">Full Menu</SidebarLink>
       </SidebarMenu>
-      {/* <SidebuttonWrap> */}
-      <SidebarRoute to="/">Order Now</SidebarRoute>
-      {/* </SidebuttonWrap> */}
+      <SideBtnWrap>
+        <SidebarRoute to="/">Order Now</SidebarRoute>
+      </SideBtnWrap>
     </SidebarContainer>
   );
 };
