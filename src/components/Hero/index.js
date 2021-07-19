@@ -19,7 +19,6 @@ const Hero = () => {
     <HeroContainer>
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
-      {/* <Sidebar onClick={() => toggleSideBar} /> */}
       <HeroContent>
         <HeroItems>
           <HeroH1>Greatest Chinese Food Ever!</HeroH1>
