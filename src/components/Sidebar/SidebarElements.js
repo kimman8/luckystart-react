@@ -78,6 +78,7 @@ export const SidebarRoute = styled.div`
   cursor: pointer;
   transition: 0.2s ease-in-out;
   text-decoration: none;
+  font-family: "Kanit", sans-serif;
 
   &:hover {
     transition: 0.2s ease-in-out;
