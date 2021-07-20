@@ -16,7 +16,7 @@ import {
 const Products = ({ heading, data }) => {
   return (
     <ProductsContainer>
-      <ProductsHeading>Choose your Favourite</ProductsHeading>
+      <ProductsHeading>{heading}</ProductsHeading>
       <ProductsWrapper>
         {data.map((product, index) => {
           return (

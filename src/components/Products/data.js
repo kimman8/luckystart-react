@@ -7,12 +7,13 @@ import friedRice from "../../images/friedRice.jpeg";
 import curryPuff from "../../images/curryPuff.jpeg";
 import chips from "../../images/chips.jpeg";
 
-export const productData = [
+export const mainsData = [
   {
     img: singaporeNoodles,
     alt: "Singapore Noodles",
     name: "Singapore Noodles",
-    desc: "Stir fried vermicelli noodles, BBQ pork, egg, carrot, onion, spring onion and seasoned with fragrant curry powder.",
+    desc:
+      "Stir fried vermicelli noodles, BBQ pork, egg, carrot, onion, spring onion and seasoned with fragrant curry powder.",
     price: "$12.00",
     button: "Add to Cart",
   },
@@ -28,23 +29,17 @@ export const productData = [
     img: chickenVege,
     alt: "Chicken & Vegetables",
     name: "Chicken & Vegetables",
-    desc: "diced chicken thighs stir fried with broccoli, cauliflower, carrots and celery in a fragrant oyster sauce.",
+    desc:
+      "diced chicken thighs stir fried with broccoli, cauliflower, carrots and celery in a fragrant oyster sauce.",
     price: "$12.00",
-    button: "Add to Cart",
-  },
-  {
-    img: dimmies,
-    alt: "Dim Sims",
-    name: "Home Made Dims Sims",
-    desc: "Our very own hand made pork and cabbage Chinese style dumpling.",
-    price: "$1.60",
     button: "Add to Cart",
   },
   {
     img: steak,
     alt: "Steak & Black Bean",
     name: "Steak & Black Bean",
-    desc: "slices of juicy beef, stir fried with broccoli, cauliflower, carrots and celery in a black bean sauce.",
+    desc:
+      "slices of juicy beef, stir fried with broccoli, cauliflower, carrots and celery in a black bean sauce.",
     price: "$12.00",
     button: "Add to Cart",
   },
@@ -54,6 +49,17 @@ export const productData = [
     name: "Fried Rice",
     desc: "BBQ pork, chicken, egg, carrots and spring onions.",
     price: "$12.00",
+    button: "Add to Cart",
+  },
+];
+
+export const entreesData = [
+  {
+    img: dimmies,
+    alt: "Dim Sims",
+    name: "Home Made Dims Sims",
+    desc: "Our very own hand made pork and cabbage Chinese style dumpling.",
+    price: "$1.60",
     button: "Add to Cart",
   },
   {
@@ -73,4 +79,3 @@ export const productData = [
     button: "Add to Cart",
   },
 ];
-export default productData;
