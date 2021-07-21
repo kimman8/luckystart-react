@@ -1,4 +1,6 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import React, { useRef } from "react";
+
 import GlobalStyle from "./globalStyles";
 import Hero from "./components/Hero";
 import Products from "./components/Products";

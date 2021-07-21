@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import {
   CloseIcon,
   Icon,
@@ -11,7 +11,7 @@ import {
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (
-    <SidebarContainer isOpen={isOpen}>
+    <SidebarContainer isOpen={isOpen} onKeyDown={() => console.log("heyy")}>
       <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
@@ -20,7 +20,7 @@ const Sidebar = ({ isOpen, toggle }) => {
         <SidebarLink to="/">Entrees</SidebarLink>
         <SidebarLink to="/">Full Menu</SidebarLink>
       </SidebarMenu>
-      <SideBtnWrap>
+      <SideBtnWrap onClick={toggle}>
         <SidebarRoute to="/">Order Now</SidebarRoute>
       </SideBtnWrap>
     </SidebarContainer>

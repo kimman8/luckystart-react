@@ -15,11 +15,21 @@ const Hero = () => {
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+  const handleKeyDown = (e) => {
+    if (e.key === "Escape" && isOpen) {
+      toggle();
+    }
+  };
+  const closeSidebar = () => {
+    if (isOpen) {
+      toggle();
+    }
+  };
   return (
-    <HeroContainer>
+    <HeroContainer onKeyDown={handleKeyDown} tabIndex="0">
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
-      <HeroContent>
+      <HeroContent onClick={closeSidebar}>
         <HeroItems>
           <HeroH1>Greatest Chinese Food Ever!</HeroH1>
           <HeroP>Ready in 60 seconds!</HeroP>
