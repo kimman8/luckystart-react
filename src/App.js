@@ -1,4 +1,12 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from "react-scroll";
+
 import React, { useRef } from "react";
 
 import GlobalStyle from "./globalStyles";
@@ -13,7 +21,12 @@ function App() {
     <Router>
       <GlobalStyle />
       <Hero />
-      <Products heading="Mains" data={mainsData} id="mains" />
+      <Products
+        heading="Mains"
+        data={mainsData}
+        id="mains"
+        name="myScrollToElement"
+      />
       <Feature />
       <Products heading="Entrees" data={entreesData} id="entrees" />
       <Footer />
