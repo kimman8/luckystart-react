@@ -1,4 +1,6 @@
 import React from "react";
+import { animateScroll as scroll } from "react-scroll";
+
 import {
   FooterContainer,
   FooterWrap,
@@ -12,12 +14,17 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
+  const toggleHomeTop = () => {
+    scroll.scrollToTop();
+  };
   return (
     <FooterContainer>
       <FooterWrap>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to="/">Lucky Start</SocialLogo>
+            <SocialLogo to="/" onClick={toggleHomeTop}>
+              Lucky Start
+            </SocialLogo>
             <SocialIcons>
               <SocialIconLink
                 href="/"

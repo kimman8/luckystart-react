@@ -13,9 +13,9 @@ function App() {
     <Router>
       <GlobalStyle />
       <Hero />
-      <Products heading="Mains" data={mainsData} />
+      <Products heading="Mains" data={mainsData} id="mains" />
       <Feature />
-      <Products heading="Entrees" data={entreesData} />
+      <Products heading="Entrees" data={entreesData} id="entrees" />
       <Footer />
     </Router>
   );
