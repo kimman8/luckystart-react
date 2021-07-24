@@ -10,13 +10,12 @@ export const Nav = styled.nav`
   font-weight: 700;
 `;
 
-export const NavLink = styled(Link)`
+export const NavLink = styled.div`
   color: #fff;
   font-size: 2rem;
   display: flex;
   align-items: center;
   text-decoration: none;
-  cursor: pointer;
 
   @media screen and (max-width: 400px) {
     position: absolute;
@@ -34,13 +33,13 @@ export const NavIcon = styled.div`
   color: #fff;
 
   p {
-    transform: translate(-175%, 0%);
+    transform: translate(-175%, 60%);
     font-weight: bold;
   }
 `;
 
 export const Bars = styled(GiCook)`
   font-size: 2rem;
-  transform: translate(-50%, -140%);
+  transform: translate(-50%, -40%);
   color: #fff;
 `;

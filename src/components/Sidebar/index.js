@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { animateScroll as scroll } from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 import {
   CloseIcon,
@@ -11,45 +11,35 @@ import {
   SideBtnWrap,
 } from "./SidebarElements";
 
-const Sidebar = ({ isOpen, toggle }) => {
-  const scrollToElement = () => {
-    scroll.scrollTo("myScrollToElement", {
-      duration: 1500,
-      delay: 100,
-      smooth: true,
-      containerId: "mains",
-      offset: 50,
-    });
-    console.log("hey scrollin");
-  };
+const Sidebar = ({ isOpen, toggle, scrollToElement }) => {
   return (
     <SidebarContainer isOpen={isOpen}>
       <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
       <SidebarMenu>
-        <SidebarLink
+        <Link
           to="mains"
-          // smooth={true}
-          // duration={500}
-          // spy={true}
-          // exact="true"
-          // offset={-80}
-          // containerId="mains"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
           onClick={scrollToElement}
         >
-          Mains
-        </SidebarLink>
-        <SidebarLink
+          <SidebarLink>Mains</SidebarLink>
+        </Link>
+        <Link
           to="entrees"
-          smooth={true}
-          duration={500}
+          activeClass="active"
           spy={true}
-          exact="true"
-          offset={-80}
+          smooth={true}
+          offset={0}
+          duration={800}
+          onClick={scrollToElement}
         >
-          Entrees
-        </SidebarLink>
+          <SidebarLink>Entrees</SidebarLink>
+        </Link>
         <SidebarLink to="/">Full Menu</SidebarLink>
       </SidebarMenu>
       <SideBtnWrap onClick={toggle}>

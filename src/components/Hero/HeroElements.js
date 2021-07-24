@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { FiArrowDown } from "react-icons/fi";
 import ImgBg from "../../images/fried-rice.jpeg";
 
 export const HeroContainer = styled.div`
@@ -15,6 +16,7 @@ export const HeroContent = styled.div`
   width: 100vw;
   padding: 0rem calc((100vw-1300px) / 2);
 `;
+
 export const HeroItems = styled.div`
   display: flex;
   flex-direction: column;
@@ -33,12 +35,15 @@ export const HeroItems = styled.div`
     width: 100%;
   }
 `;
-export const HeroH1 = styled.h1`
-  font-size: clamp(2.5rem, 10vh, 5rem);
+
+export const HeroCall = styled.div`
+  font-size: clamp(2rem, 7vh, 4rem);
   margin-bottom: 1rem;
   box-shadow: 3px 5px #e9ba23;
   letter-spacing: 3px;
+  display: flex;
 `;
+export const HeroH1 = styled.h1``;
 export const HeroBtn = styled.button`
   font-size: 1.4rem;
   padding: 1rem 4rem;
@@ -57,5 +62,26 @@ export const HeroBtn = styled.button`
 `;
 export const HeroP = styled.p`
   font-size: clamp(2rem, 2.5vh, 3rem);
+  margin-bottom: 0.5rem;
+`;
+
+export const HeroPsm = styled.p`
+  font-size: clamp(1.5rem, 1.5vh, 3rem);
   margin-bottom: 2rem;
+`;
+
+export const HeroArrow = styled.div`
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  // margin-left: auto;
+  // margin-right: auto;
+  margin: 0 auto;
+  width: 100px;
+`;
+
+export const DownArrow = styled(FiArrowDown)`
+  font-size: 1.5rem;
+  cursor: pointer;
 `;

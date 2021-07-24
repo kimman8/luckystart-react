@@ -1,11 +1,8 @@
 import singaporeNoodles from "../../images/singaporeNoodles.jpeg";
 import honeyChicken from "../../images/honeyChicken.jpeg";
 import chickenVege from "../../images/chickenVege.jpeg";
-import dimmies from "../../images/dimmies.jpeg";
 import steak from "../../images/steak.jpeg";
 import friedRice from "../../images/friedRice.jpeg";
-import curryPuff from "../../images/curryPuff.jpeg";
-import chips from "../../images/chips.jpeg";
 
 export const mainsData = [
   {
@@ -49,33 +46,6 @@ export const mainsData = [
     name: "Fried Rice",
     desc: "BBQ pork, chicken, egg, carrots and spring onions.",
     price: "$12.00",
-    button: "Add to Cart",
-  },
-];
-
-export const entreesData = [
-  {
-    img: dimmies,
-    alt: "Dim Sims",
-    name: "Home Made Dims Sims",
-    desc: "Our very own hand made pork and cabbage Chinese style dumpling.",
-    price: "$1.60",
-    button: "Add to Cart",
-  },
-  {
-    img: curryPuff,
-    alt: "Curry Puff",
-    name: "Curry Puff",
-    desc: "beef, corn, potato, carrot, curry",
-    price: "$3.00",
-    button: "Add to Cart",
-  },
-  {
-    img: chips,
-    alt: "Chips",
-    name: "Chips",
-    desc: "Straight cut chips!",
-    price: "$4.00",
     button: "Add to Cart",
   },
 ];

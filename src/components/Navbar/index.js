@@ -1,20 +1,14 @@
 import React, { Fragment } from "react";
 import { Bars, Nav, NavIcon, NavLink } from "./NavbarElements";
-import { animateScroll as scroll } from "react-scroll";
 
 const Navbar = ({ toggle }) => {
-  const toggleHome = () => {
-    scroll.scrollToBottom();
-  };
   return (
     <Fragment>
       <Nav>
-        <NavLink to="/" onClick={toggleHome}>
-          Lucky Start Chinese Takeaway
-        </NavLink>
-        <NavIcon onClick={toggle}>
+        <NavLink>Lucky Start Chinese Takeaway</NavLink>
+        <NavIcon onClick={toggle} className="hover:text-red-500">
           <p>Menu</p>
-          <Bars />
+          <Bars className="hover:text-yellow-500" />
         </NavIcon>
       </Nav>
     </Fragment>
