@@ -1,6 +1,7 @@
 import dimmies from "../../images/dimmies.jpeg";
 import curryPuff from "../../images/curryPuff.jpeg";
 import chips from "../../images/chips.jpeg";
+import potatoCakes from "../../images/potatoCakes.jpeg";
 
 export const entreesData = [
   {
@@ -19,13 +20,20 @@ export const entreesData = [
     price: "$1.60",
     button: "Add to Cart",
   },
-
   {
     img: chips,
     alt: "Chips",
     name: "Chips",
     desc: "Straight cut chips!",
     price: "$4.00",
+    button: "Add to Cart",
+  },
+  {
+    img: potatoCakes,
+    alt: "Potato Cakes",
+    name: "Potato Cakes",
+    desc: "Thin slices of potato, battered and deep-fried.",
+    price: "$1.30",
     button: "Add to Cart",
   },
 ];

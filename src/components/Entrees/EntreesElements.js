@@ -11,7 +11,7 @@ export const EntreesContainer = styled.div`
 export const EntreesHeading = styled.h1`
   font-size: clamp(2rem, 2.5vw, 3rem);
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 `;
 
 export const EntreesWrapper = styled.div`
@@ -22,8 +22,8 @@ export const EntreesWrapper = styled.div`
 `;
 
 export const EntreeCard = styled.div`
-  margin: 0 2rem;
-  line-height: 2;
+  margin: 0 2.5rem;
+  line-height: 1.5;
   width: 300px;
 `;
 
@@ -32,12 +32,12 @@ export const EntreeInfo = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
 `;
 
 export const EntreeTitle = styled.h2`
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.5rem;
 `;
 
@@ -47,14 +47,17 @@ export const EntreeDesc = styled.p`
 
 export const EntreePrice = styled.p`
   margin-bottom: 1rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
 `;
 
 export const EntreeImg = styled.img`
-  height: 300px;
-  min-width: 300px;
+  height: 350px;
+  min-width: 350px;
   max-width: 100%;
   box-shadow: 8px 8px #fdc500;
+  &:hover {
+    box-shadow: 8px 8px #e31837;
+  }
 `;
 
 export const EntreeButton = styled.button`
