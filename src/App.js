@@ -37,7 +37,7 @@ const App = () => {
       <Footer toggleHomeTop={toggleHomeTop} />
       {scrollDown && (
         <FiArrowUp
-          className="text-white text-2xl hover:text-red-500 fixed bottom-8 right-8 animate-bounce cursor-pointer"
+          className="text-white text-2xl hover:text-red-500 fixed bottom-4 right-4 animate-bounce cursor-pointer"
           onClick={toggleHomeTop}
         />
       )}

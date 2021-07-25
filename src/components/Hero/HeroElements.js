@@ -32,7 +32,7 @@ export const HeroItems = styled.div`
   line-height: 1;
   font-weight: bold;
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 450px) {
     width: 100%;
   }
 `;
@@ -53,7 +53,10 @@ export const HeroBtn = styled.button`
   color: #fff;
   transition: 0.2s ease-out;
   font-family: "Kanit", sans-serif;
-
+  @media screen and (max-width: 450px) {
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+  }
   &:hover {
     background: #ffc500;
     transition: 0.2s ease-out;
@@ -67,8 +70,12 @@ export const HeroP = styled.p`
 `;
 
 export const HeroPsm = styled.p`
-  font-size: clamp(1.5rem, 1.5vh, 3rem);
+  font-size: clamp(1.5rem, 1vh, 3rem);
   margin-bottom: 2rem;
+  @media screen and (max-height: 667px) {
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+  }
 `;
 
 export const HeroArrow = styled.div`

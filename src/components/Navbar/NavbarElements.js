@@ -18,11 +18,10 @@ export const NavLink = styled.div`
   align-items: center;
   text-decoration: none;
 
-  // @media screen and (max-width: 400px) {
-  //   position: absolute;
-  //   top: 10px;
-  //   left: 25px;
-  // }
+  @media screen and (max-width: 450px),
+  screen and (max-height: 667px)
+    {
+    font-size: 1.5rem;
 `;
 
 export const NavIcon = styled.div`
