@@ -54,9 +54,19 @@ const Hero = () => {
             <AiFillPhone />
             <HeroH1>9782 6668</HeroH1>
           </HeroCall>
-          <HeroP>OPEN 7 DAYS A WEEK</HeroP>
-          <HeroPsm>CARRUM DOWNS SHOPPING CENTRE IN THE FOOD COURT</HeroPsm>
-          <HeroBtn>MENU</HeroBtn>
+          <HeroP>OPEN EVERY DAY</HeroP>
+          <HeroPsm>CARRUM DOWNS SHOPPING CENTRE FOOD COURT</HeroPsm>
+          <Link
+            to="mains"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            onClick={scrollToElement}
+          >
+            <HeroBtn>MENU</HeroBtn>
+          </Link>
         </HeroItems>
         <Link
           to="mains"

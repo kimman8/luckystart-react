@@ -23,7 +23,6 @@ const About = () => {
           comes to good Chinese food you can’t look past Lucky Start!
         </p>
       </AboutTextContainer>
-      <AboutTextContainer></AboutTextContainer>
     </AboutContainer>
   );
 };

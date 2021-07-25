@@ -8,19 +8,20 @@ export const AboutContainer = styled.div`
   max-height: 1000px;
   background-position: center;
   background-size: cover;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  // display: grid;
+  // grid-template-columns: 1fr 1fr;
+  display: flex;
   // flex-direction: column;
   // justify-content: center;
   align-items: center;
   color: #fff;
   // text-align: center;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
 `;
 
 export const AboutTextContainer = styled.div`
-  width: 500px;
-
+  width: 400px;
+  max-height: 500px;
   h1 {
     font-size: clamp(2rem, 3.5vh, 4rem);
   }

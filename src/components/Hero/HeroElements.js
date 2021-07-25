@@ -12,6 +12,7 @@ export const HeroContainer = styled.div`
 
 export const HeroContent = styled.div`
   height: calc(100vh - 80px);
+  // height: 100vh;
   max-height: 100%;
   width: 100vw;
   padding: 0rem calc((100vw-1300px) / 2);
@@ -25,19 +26,19 @@ export const HeroItems = styled.div`
   height: 100vh;
   max-height: 100%;
   color: #fff;
-  padding: 0 2rem;
-  width: 650px;
+  padding: 0 1rem;
+  width: 500px;
   text-transform: uppercase;
   line-height: 1;
   font-weight: bold;
 
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 500px) {
     width: 100%;
   }
 `;
 
 export const HeroCall = styled.div`
-  font-size: clamp(2rem, 7vh, 4rem);
+  font-size: clamp(1.5rem, 5vh, 3.5rem);
   margin-bottom: 1rem;
   box-shadow: 3px 5px #e9ba23;
   letter-spacing: 3px;

@@ -37,6 +37,7 @@ export const SocialLogo = styled(Link)`
   align-items: center;
   margin-bottom: 16px;
   font-weight: bold;
+  text-transform: uppercase;
 `;
 export const SocialIcons = styled.div`
   display: flex;

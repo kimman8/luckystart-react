@@ -9,9 +9,10 @@ export const EntreesContainer = styled.div`
 `;
 
 export const EntreesHeading = styled.h1`
-  font-size: clamp(2rem, 2.5vw, 3rem);
+  font-size: clamp(2rem, 3vw, 4rem);
   text-align: center;
-  margin-bottom: 4rem;
+  margin: 4rem 0rem;
+  text-transform: uppercase;
 `;
 
 export const EntreesWrapper = styled.div`
@@ -22,9 +23,9 @@ export const EntreesWrapper = styled.div`
 `;
 
 export const EntreeCard = styled.div`
-  margin: 0 2.5rem;
+  margin: 0 2rem;
   line-height: 1.5;
-  width: 300px;
+  width: 350px;
 `;
 
 export const EntreeInfo = styled.div`
@@ -39,14 +40,15 @@ export const EntreeInfo = styled.div`
 export const EntreeTitle = styled.h2`
   font-weight: 300;
   font-size: 1.5rem;
+  text-transform: uppercase;
 `;
 
 export const EntreeDesc = styled.p`
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 `;
 
 export const EntreePrice = styled.p`
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   font-size: 1.5rem;
 `;
 

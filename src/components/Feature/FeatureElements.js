@@ -18,6 +18,7 @@ export const FeautureContainer = styled.div`
 
   h1 {
     font-size: clamp(3rem, 5vh, 5rem);
+    text-transform: uppercase;
   }
 
   p {

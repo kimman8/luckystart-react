@@ -9,7 +9,7 @@ export const entreesData = [
     alt: "Curry Puff",
     name: "Curry Puff",
     desc: "beef, corn, potato, carrot, curry",
-    price: "$3.00",
+    price: "$3.50",
     button: "Add to Cart",
   },
   {

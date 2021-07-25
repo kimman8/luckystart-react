@@ -1,17 +1,18 @@
 import styled from "styled-components";
 
 export const MainsContainer = styled.div`
-  //   width: 100vw;
+  width: 100vw;
   min-height: 100vh;
-  padding: 5rem calc((100vw-1300px) / 2);
+  padding: 4rem calc((100vw-1300px) / 2);
   background: #150f0f;
   color: #fff;
 `;
 
 export const MainsHeading = styled.h1`
-  font-size: clamp(2rem, 2.5vw, 3rem);
+  font-size: clamp(2rem, 3vw, 4rem);
   text-align: center;
-  margin-bottom: 4rem;
+  margin: 4rem 0rem;
+  text-transform: uppercase;
 `;
 
 export const MainsWrapper = styled.div`
@@ -22,9 +23,9 @@ export const MainsWrapper = styled.div`
 `;
 
 export const MainCard = styled.div`
-  margin: 0 2.5rem;
+  margin: 0 2rem;
   line-height: 1.5;
-  width: 300px;
+  width: 350px;
 `;
 
 export const MainInfo = styled.div`
@@ -39,14 +40,16 @@ export const MainInfo = styled.div`
 export const MainTitle = styled.h2`
   font-weight: 300;
   font-size: 1.5rem;
+  text-transform: uppercase;
 `;
 
 export const MainDesc = styled.p`
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 `;
 
 export const MainPrice = styled.p`
   font-size: 1.5rem;
+  margin-bottom: 3rem;
 `;
 
 export const MainImg = styled.img`

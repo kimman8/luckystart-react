@@ -40,11 +40,11 @@ const Sidebar = ({ isOpen, toggle, scrollToElement }) => {
         >
           <SidebarLink>Entrees</SidebarLink>
         </Link>
-        <SidebarLink to="/">Full Menu</SidebarLink>
+        {/* <SidebarLink to="/">Full Menu</SidebarLink> */}
       </SidebarMenu>
-      <SideBtnWrap onClick={toggle}>
+      {/* <SideBtnWrap onClick={toggle}>
         <SidebarRoute to="/">Order Now</SidebarRoute>
-      </SideBtnWrap>
+      </SideBtnWrap> */}
     </SidebarContainer>
   );
 };

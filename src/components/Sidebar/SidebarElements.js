@@ -5,7 +5,7 @@ import { FaTimes } from "react-icons/fa";
 export const SidebarContainer = styled.aside`
   position: fixed;
   z-index: 999;
-  width: 350px;
+  width: 200px;
   background: #ffc500;
   height: 100%;
   display: grid;
@@ -32,6 +32,10 @@ export const Icon = styled.div`
 
 export const CloseIcon = styled(FaTimes)`
   color: #000;
+  &:hover {
+    color: #e31837;
+    transition: 0.2s ease-in-out;
+  }
 `;
 
 export const SidebarMenu = styled.div`

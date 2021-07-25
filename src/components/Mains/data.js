@@ -11,7 +11,7 @@ export const mainsData = [
     name: "Singapore Noodles",
     desc:
       "Stir fried vermicelli noodles, BBQ pork, egg, carrot, onion, spring onion and seasoned with fragrant curry powder.",
-    price: "$12.00",
+    price: "$11.00",
     button: "Add to Cart",
   },
   {
@@ -45,7 +45,7 @@ export const mainsData = [
     alt: "Fried Rice",
     name: "Fried Rice",
     desc: "BBQ pork, chicken, egg, carrots and spring onions.",
-    price: "$12.00",
+    price: "$10.00",
     button: "Add to Cart",
   },
 ];
