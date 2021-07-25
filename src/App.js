@@ -1,5 +1,5 @@
-import { BrowserRouter as Router } from "react-router-dom";
 import { animateScroll as scroll } from "react-scroll";
+import { BrowserRouter as Router } from "react-router-dom";
 import React, { useState } from "react";
 import GlobalStyle from "./globalStyles";
 import Hero from "./components/Hero";
@@ -11,6 +11,7 @@ import Mains from "./components/Mains";
 import Entrees from "./components/Entrees";
 import { FiArrowUp } from "react-icons/fi";
 import About from "./components/About";
+import WrappedMap from "./components/Map";
 
 const App = () => {
   const toggleHomeTop = () => {
@@ -19,7 +20,6 @@ const App = () => {
   const [scrollDown, setScrollDown] = useState(false);
 
   window.onscroll = function (e) {
-    console.log(window.scrollY); // Value of scroll Y in px
     if (window.scrollY > 500) {
       setScrollDown(true);
     } else {
@@ -34,6 +34,14 @@ const App = () => {
       <Mains heading="Mains" data={mainsData} />
       <Feature />
       <Entrees heading="Entrees" data={entreesData} />
+      {/* <div className="w-screen h-screen">
+        <WrappedMap
+          googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyDeBOrS-OEtJaC59Gs91w2fmgyDFEVZZfA`}
+          loadingElement={<div style={{ height: "75%" }} />}
+          containerElement={<div style={{ height: "75%" }} />}
+          mapElement={<div style={{ height: "75%" }} />}
+        />
+      </div> */}
       <Footer toggleHomeTop={toggleHomeTop} />
       {scrollDown && (
         <FiArrowUp
