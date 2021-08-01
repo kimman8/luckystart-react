@@ -25,7 +25,7 @@ export const MainsWrapper = styled.div`
 export const MainCard = styled.div`
   margin: 0 2rem;
   line-height: 1.5;
-  width: 350px;
+  width: 300px;
 `;
 
 export const MainInfo = styled.div`
