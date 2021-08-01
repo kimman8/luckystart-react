@@ -1,7 +1,9 @@
 import dimmies from "../../images/dimmies.jpeg";
+import steamedDimmies from "../../images/steamedDimmies1.jpeg";
 import curryPuff from "../../images/curryPuff.jpeg";
 import chips from "../../images/chips.jpeg";
 import potatoCakes from "../../images/potatoCakes.jpeg";
+import springRolls from "../../images/springRolls1.jpeg";
 
 export const entreesData = [
   {
@@ -15,9 +17,28 @@ export const entreesData = [
   {
     img: dimmies,
     alt: "Dim Sims",
-    name: "Home Made Dims Sims",
-    desc: "Our very own hand made pork and cabbage Chinese style dumpling.",
+    name: "Home Made Fried Dims Sims",
+    desc:
+      "Our very own hand made fried pork and cabbage Chinese style dumpling.",
     price: "$1.60",
+    button: "Add to Cart",
+  },
+  {
+    img: steamedDimmies,
+    alt: "Steamed Dim Sims",
+    name: "Home Made Steamed Dims Sims",
+    desc:
+      "Our very own hand made steamed pork and cabbage Chinese style dumpling.",
+    price: "$1.60",
+    button: "Add to Cart",
+  },
+  {
+    img: springRolls,
+    alt: "Spring Rolls",
+    name: "Home Made Spring Rolls",
+    desc:
+      "Our very own hand made spring rolls with chicken, pork, carrot, celery and cabbage. Also comes in vege only option.",
+    price: "$2.60",
     button: "Add to Cart",
   },
   {

@@ -1,5 +1,6 @@
 import singaporeNoodles from "../../images/singaporeNoodles.jpeg";
 import honeyChicken from "../../images/honeyChicken.jpeg";
+import friedChicken from "../../images/friedChicken1.jpeg";
 import chickenVege from "../../images/chickenVege.jpeg";
 import steak from "../../images/steak.jpeg";
 import friedRice from "../../images/friedRice.jpeg";
@@ -22,12 +23,21 @@ export const mainsData = [
     price: "$12.00",
     button: "Add to Cart",
   },
+
   {
     img: chickenVege,
     alt: "Chicken & Vegetables",
     name: "Chicken & Vegetables",
     desc:
       "diced chicken thighs stir fried with broccoli, cauliflower, carrots and celery in a fragrant oyster sauce.",
+    price: "$12.00",
+    button: "Add to Cart",
+  },
+  {
+    img: friedChicken,
+    alt: "Fried Chicken",
+    name: "Fried Chicken",
+    desc: "Battered chicken pieces with Sweet and Sour sauce or Lemon sauce.",
     price: "$12.00",
     button: "Add to Cart",
   },
